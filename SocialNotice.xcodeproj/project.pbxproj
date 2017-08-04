@@ -17,6 +17,7 @@
 		F00B99621F31E3A20084EA88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F00B99611F31E3A20084EA88 /* GoogleService-Info.plist */; };
 		F00B99651F31E4AE0084EA88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B99641F31E4AE0084EA88 /* Constants.swift */; };
 		F00B99671F31E51E0084EA88 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B99661F31E51E0084EA88 /* FancyView.swift */; };
+		F00B998B1F335CE10084EA88 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B998A1F335CE10084EA88 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		F00B99611F31E3A20084EA88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F00B99641F31E4AE0084EA88 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F00B99661F31E51E0084EA88 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		F00B99891F33558E0084EA88 /* SocialNotice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialNotice.entitlements; sourceTree = "<group>"; };
+		F00B998A1F335CE10084EA88 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		F00B99471F31C3CB0084EA88 /* SocialNotice */ = {
 			isa = PBXGroup;
 			children = (
+				F00B99891F33558E0084EA88 /* SocialNotice.entitlements */,
 				F00B99481F31C3CB0084EA88 /* AppDelegate.swift */,
 				F00B994A1F31C3CB0084EA88 /* ViewController.swift */,
 				F00B995A1F31C3D80084EA88 /* Main.storyboard */,
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F00B995F1F31C62D0084EA88 /* SignInVC.swift */,
+				F00B998A1F335CE10084EA88 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -169,6 +174,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = F4GB6K2J56;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -211,9 +221,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialNotice/Pods-SocialNotice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -241,13 +258,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialNotice-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -257,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00B998B1F335CE10084EA88 /* FeedVC.swift in Sources */,
 				F00B994B1F31C3CB0084EA88 /* ViewController.swift in Sources */,
 				F00B99671F31E51E0084EA88 /* FancyView.swift in Sources */,
 				F00B99491F31C3CB0084EA88 /* AppDelegate.swift in Sources */,
