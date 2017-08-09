@@ -18,6 +18,9 @@
 		F00B99651F31E4AE0084EA88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B99641F31E4AE0084EA88 /* Constants.swift */; };
 		F00B99671F31E51E0084EA88 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B99661F31E51E0084EA88 /* FancyView.swift */; };
 		F00B998B1F335CE10084EA88 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00B998A1F335CE10084EA88 /* FeedVC.swift */; };
+		F02943F21F39C9C200482C35 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02943F11F39C9C200482C35 /* PostCell.swift */; };
+		F02943F41F39D36C00482C35 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02943F31F39D36C00482C35 /* AddVC.swift */; };
+		F071D88E1F3856D100CAB293 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071D88D1F3856D100CAB293 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		F00B99661F31E51E0084EA88 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		F00B99891F33558E0084EA88 /* SocialNotice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialNotice.entitlements; sourceTree = "<group>"; };
 		F00B998A1F335CE10084EA88 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		F02943F11F39C9C200482C35 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F02943F31F39D36C00482C35 /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		F071D88D1F3856D100CAB293 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				F00B99661F31E51E0084EA88 /* FancyView.swift */,
+				F071D88D1F3856D100CAB293 /* CircleView.swift */,
+				F02943F11F39C9C200482C35 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			children = (
 				F00B995F1F31C62D0084EA88 /* SignInVC.swift */,
 				F00B998A1F335CE10084EA88 /* FeedVC.swift */,
+				F02943F31F39D36C00482C35 /* AddVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -277,12 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02943F41F39D36C00482C35 /* AddVC.swift in Sources */,
 				F00B998B1F335CE10084EA88 /* FeedVC.swift in Sources */,
 				F00B994B1F31C3CB0084EA88 /* ViewController.swift in Sources */,
 				F00B99671F31E51E0084EA88 /* FancyView.swift in Sources */,
 				F00B99491F31C3CB0084EA88 /* AppDelegate.swift in Sources */,
 				F00B99601F31C62D0084EA88 /* SignInVC.swift in Sources */,
+				F071D88E1F3856D100CAB293 /* CircleView.swift in Sources */,
 				F00B99651F31E4AE0084EA88 /* Constants.swift in Sources */,
+				F02943F21F39C9C200482C35 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

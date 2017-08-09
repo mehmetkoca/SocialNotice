@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 import SwiftKeychainWrapper
 class SignInVC: UIViewController {
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var pwdField: UITextField!
 
@@ -60,11 +61,9 @@ class SignInVC: UIViewController {
                             if let user = user {
                                 self.completeSignIn(id: user.uid)
                             }
-                            
                         }
                     })
                 }
-            
             })
         }
     }
