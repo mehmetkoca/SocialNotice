@@ -201,12 +201,16 @@
                                         </constraints>
                                         <state key="normal" image="send"/>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="kqr-tT-hbO">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="kqr-tT-hbO">
                                         <rect key="frame" x="8" y="9" width="50" height="50"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="C1c-Mo-Dly"/>
                                             <constraint firstAttribute="height" constant="50" id="Fpc-pm-nD6"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="wtt-ya-7td" appends="YES" id="kWp-ST-HNs"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81176470588235294" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -229,30 +233,30 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="151" id="BT9-SG-IqJ" customClass="PostCell" customModule="SocialNotice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BT9-SG-IqJ" id="i8p-tP-27A">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="BT9-SG-IqJ" id="i8p-tP-27A">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-sl-3RF" customClass="FancyView" customModule="SocialNotice" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-sl-3RF" customClass="FancyView" customModule="SocialNotice" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="350" height="136"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-XF-7ob">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-XF-7ob">
                                                             <rect key="frame" x="8" y="8" width="334" height="120"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="festExample" translatesAutoresizingMaskIntoConstraints="NO" id="zMB-dV-gZe">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="festExample" translatesAutoresizingMaskIntoConstraints="NO" id="zMB-dV-gZe">
                                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="120" id="lrJ-Bc-ds7"/>
                                                                         <constraint firstAttribute="width" constant="120" id="uMB-zV-vf0"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9rO-mY-fPW">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9rO-mY-fPW">
                                                                     <rect key="frame" x="120" y="0.0" width="214" height="120"/>
                                                                     <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="de6-1f-aF5">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="de6-1f-aF5">
                                                                             <rect key="frame" x="0.0" y="0.0" width="214" height="28"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemon City Tric" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7G-Qo-MWi">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lemon City Tric" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7G-Qo-MWi">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="144" height="28"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="144" id="6ep-gj-DDz"/>
@@ -261,16 +265,16 @@
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAZ-rv-yzu">
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GAZ-rv-yzu">
                                                                                     <rect key="frame" x="169" y="0.0" width="45" height="28"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdg-vt-iju">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdg-vt-iju">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="17" height="28"/>
                                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerMug" translatesAutoresizingMaskIntoConstraints="NO" id="hK8-lw-5kz">
+                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="beerMug" translatesAutoresizingMaskIntoConstraints="NO" id="hK8-lw-5kz">
                                                                                             <rect key="frame" x="17" y="0.0" width="28" height="28"/>
                                                                                             <constraints>
                                                                                                 <constraint firstAttribute="width" constant="28" id="XvG-Q7-jc2"/>
@@ -281,7 +285,7 @@
                                                                                 </stackView>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-tD-RKP">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-tD-RKP">
                                                                             <rect key="frame" x="0.0" y="28" width="214" height="92"/>
                                                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
                                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
@@ -340,6 +344,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="kqr-tT-hbO" id="3F5-aa-AVl"/>
                         <outlet property="tableView" destination="1w8-bE-ZDz" id="06a-dD-yHD"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="KeA-YI-ddo"/>
                         <segue destination="Hai-QW-q5V" kind="show" identifier="goToSend" id="JZi-Tt-rXO"/>
@@ -349,6 +354,11 @@
                 <tapGestureRecognizer id="sq2-uq-oW8">
                     <connections>
                         <action selector="signOutTapped:" destination="SFW-4S-OnU" id="Fvu-dD-U5p"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wtt-ya-7td">
+                    <connections>
+                        <action selector="addImageTapped:" destination="SFW-4S-OnU" id="AQI-X8-bnT"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
