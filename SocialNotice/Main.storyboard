@@ -166,7 +166,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92550647259999996" green="0.78429593129999997" blue="0.19792318589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.7843137255" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8ec-1k-RLd" secondAttribute="trailing" constant="8" id="4rS-i8-RRJ"/>
                                     <constraint firstItem="ZMl-RV-d5g" firstAttribute="centerY" secondItem="Br8-qa-9Lw" secondAttribute="centerY" id="LpF-xy-hQu"/>
@@ -325,6 +325,7 @@
                                             <outlet property="caption" destination="GoX-tD-RKP" id="Nsf-36-lf5"/>
                                             <outlet property="festImg" destination="zMB-dV-gZe" id="dfe-2b-oWh"/>
                                             <outlet property="festName" destination="z7G-Qo-MWi" id="ovm-em-iVA"/>
+                                            <outlet property="likeImg" destination="hK8-lw-5kz" id="YwU-mw-lGK"/>
                                             <outlet property="likesLbl" destination="Zdg-vt-iju" id="jDW-1N-wCk"/>
                                         </connections>
                                     </tableViewCell>
